@@ -38,7 +38,7 @@ describe Pio::OpenFlow10::SendOutPort do
       Given(:options) { 0xff01 }
       Then do
         send_out_port ==
-          Failure(ArgumentError, 'The port should be < 0xff00')
+          Failure(ArgumentError, 'The port should be <= 0xff00')
       end
     end
 

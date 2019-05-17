@@ -48,8 +48,8 @@ describe Pio::OpenFlow10::Enqueue do
       Then { enqueue == Failure(ArgumentError) }
     end
 
-    context 'with port: 0xff00, queue_id: 2' do
-      When(:enqueue) { Pio::OpenFlow10::Enqueue.new(port: 0xff00, queue_id: 2) }
+    context 'with port: 0xff01, queue_id: 2' do
+      When(:enqueue) { Pio::OpenFlow10::Enqueue.new(port: 0xff01, queue_id: 2) }
       Then { enqueue == Failure(ArgumentError) }
     end
 
