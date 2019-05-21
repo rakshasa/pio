@@ -4,6 +4,7 @@
 require 'pio/open_flow13/echo/reply'
 require 'pio/open_flow13/echo/request'
 require 'pio/open_flow13/error'
+require 'pio/open_flow13/error/bad_match'
 require 'pio/open_flow13/error/bad_request'
 require 'pio/open_flow13/error/hello_failed'
 require 'pio/open_flow13/features/reply'
