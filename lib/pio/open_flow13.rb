@@ -36,6 +36,7 @@ require 'pio/open_flow13/set_arp_sender_protocol_address'
 require 'pio/open_flow13/set_destination_mac_address'
 require 'pio/open_flow13/set_ip_ttl'
 require 'pio/open_flow13/set_source_mac_address'
+require 'pio/open_flow13/set_tunnel_id'
 
 # Instructions
 require 'pio/open_flow13/apply'
