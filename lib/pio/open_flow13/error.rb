@@ -1,17 +1,12 @@
 # frozen_string_literal: true
 
 require 'pio/open_flow/error_message'
-require 'pio/open_flow13/error/bad_match'
-require 'pio/open_flow13/error/bad_request'
 require 'pio/open_flow13/error/error_type13'
-require 'pio/open_flow13/error/hello_failed'
 
 module Pio
   module OpenFlow13
     # Error message parser
     module Error
-      mattr_reader(:type) { 1 }
-
       extend OpenFlow::ErrorMessage
 
       # Error message body parser.
